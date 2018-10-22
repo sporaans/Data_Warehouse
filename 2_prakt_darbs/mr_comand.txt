@@ -1,0 +1,5 @@
+hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar \
+	-input /user/cloudera/2pd/data/ \
+	-output /user/cloudera/2pd/output_new \
+	-mapper /home/cloudera/Documents/2_prakt_darbs/mapper.py \
+	-reducer /home/cloudera/Documents/2_prakt_darbs/reducer.py
